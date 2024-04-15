@@ -14,16 +14,16 @@ public class HospitalManagementApplication {
 	}
 
 
-//	@Configuration
-//	public static class MessageSourceConfig {
-//		@Bean
-//		public ResourceBundleMessageSource messageSource() {
-//			ResourceBundleMessageSource source = new ResourceBundleMessageSource();
-//			source.setBasename("ValidateMessages");
-//			source.setDefaultEncoding("UTF-8");
-//			return source;
-//		}
-//	}
+	@Configuration
+	public static class MessageSourceConfig {
+		@Bean
+		public ResourceBundleMessageSource messageSource() {
+			ResourceBundleMessageSource source = new ResourceBundleMessageSource();
+			source.setBasename("Messages");
+			source.setDefaultEncoding("UTF-8");
+			return source;
+		}
+	}
 
 
 }
